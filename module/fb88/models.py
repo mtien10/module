@@ -17,7 +17,7 @@ class TimeStampMixin(models.Model):
 
 
 class Fb88(TimeStampMixin):
-    name = models.CharField(max_length=255, null=True, help_text='Hay dien doi bong ban dat cuoc ',
+    name = models.CharField(max_length=255, null=True,blank=True, help_text='Hay dien doi bong ban dat cuoc ',
                             verbose_name='Dat cuoc cho doi bong than yeu')
 
     class Meta:
@@ -70,7 +70,7 @@ class Image(TimeStampMixin):
     w = models.FloatField(null=True, blank=True, default=0)
 
     class Meta:
-        db_table = 'tbl_image'
+        db_table = 'fb88_image'
 
     @staticmethod
     def get_entity_name():

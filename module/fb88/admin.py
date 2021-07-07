@@ -12,8 +12,8 @@ admin.site.register(Fb88,Fb88Admin)
 
 @admin.register(Question)
 class QuestionAdmin(admin.ModelAdmin):
-    list_display = ('id','name','created','update')
-    list_filter = ('id','name','created','update')
+    list_display = ('id','name','created','updated')
+    list_filter = ('id','name','created','updated')
     search_fields = ('id','name')
 
 # admin.site.register(Question, QuestionAdmin)
